@@ -31,7 +31,7 @@ class Dates(object):
         else:
             self.suffix = 'th'
 
-        # formats date outputs
+        # format date outputs - remove leading 0 on first 9 days of the month & add suffix on date string.
         if self.day_now[0] == '0':
             self.day_today = self.day_now[1]
         else:

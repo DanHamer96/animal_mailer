@@ -31,7 +31,7 @@ class SendEmail(object):
         self.msg['To'] = self.recipient_email
         self.msg.set_content(content)
 
-        # add an image - corresponding image number to today's date
+        # add image attachment - corresponding image number to today's date
         file = '/Users/dannyhamer96/PycharmProjects/animal_mailer/images/img_%s.jpg' % self.day_today
 
         with open(file, 'rb') as f:
