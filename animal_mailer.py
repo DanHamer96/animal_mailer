@@ -5,11 +5,13 @@ from dates import Dates
 import imghdr
 
 
+# The below class will create and send an email to Alice with a cow / dog image based on today's date.
+# This script is executed at 9am every day on crontab.
 class SendEmail(object):
 
     def __init__(self):
 
-        # get the details of the account we'll be sending the email from - these are stored in a csv locally
+        # get the details of the account we'll be sending the email from / to - these are stored in a csv locally
         self.fp = '/Users/dannyhamer96/login_details/dh_email/login.csv'
         self.data = pd.read_csv(self.fp)
         self.my_email = str(self.data.iloc[0]['value'])
@@ -44,6 +46,7 @@ class SendEmail(object):
             smtp.login(self.my_email, self.my_password)
 
             smtp.send_message(self.msg)
+
 
 # send the email
 SendEmail().create_email('Picture of the day: ' + str(Dates().get_dates()[0]),

@@ -1,7 +1,7 @@
 import datetime as dt
 
 
-# this class will format the date nicely for the email output - this also generates the day of the month today.
+# this class will format the date nicely for the email output. This class also generates the day of the month today.
 class Dates(object):
 
     def __init__(self):
