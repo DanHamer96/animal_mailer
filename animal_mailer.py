@@ -1,7 +1,7 @@
 import smtplib
 import pandas as pd
 from email.message import EmailMessage
-from dates import Dates
+from code.dates import Dates
 import imghdr
 
 
