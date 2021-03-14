@@ -12,9 +12,9 @@ My girlfriend loves dogs & cows - so to start her day off right, the code will e
 
 The script is scheduled to run locally on a cron job every morning:
 
-'crontab -e'
+`crontab -e`
 
-'0 9  * * * /Users/dannyhamer96/anaconda3/bin/python3.6 /Users/dannyhamer96/PycharmProjects/animal_mailer/animal_mailer.py'
+`0 9  * * * /Users/dannyhamer96/anaconda3/bin/python3.6 /Users/dannyhamer96/PycharmProjects/animal_mailer/animal_mailer.py`
 
 ## Technologies
 This project makes use of the following technologies: 
