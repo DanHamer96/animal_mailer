@@ -3,6 +3,8 @@
 ## Table of contents
 * [About](#about)
 * [Technologies](#technologies)
+* - [Languages](#languages)
+* - [Libraries](#libraries)
 * [Example Output](#example-output)
 
 
